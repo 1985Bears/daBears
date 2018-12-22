@@ -1,5 +1,14 @@
-# daBears
-We can work on the name later...
+# Liri Bot
+---
+- **For:** Northwestern Coding Bootcamp
+- **Developers:** Benjamin Delong, Kat Eng, Kayla Verheyen, Sergio Ontiveros
+- **Deployment Date** 
+- **Built With** Node.js, Javascript, Sequelize, 
+- **APIs** BreweryDB,
+- **Demo**
+See a full demo [here!]()
 
 
-Remember me this way, team
+
+### Notes
+---
