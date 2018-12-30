@@ -1,3 +1,83 @@
+body{
+  background: url("../assets/images/wood-background.jpg");
+  background-position:center;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#profile-pic {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: white;
+  margin-top: 25px;
+}
+
+hr {
+  border-top: 2px solid white;
+}
+
+#beer-profiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(0px, auto);
+  margin-bottom: 25px;
+}
+
+#new-profile {
+  margin-bottom: 100px;
+}
+
+.profile {
+  background-color: white;
+  color: black;
+}
+
+nav {
+  margin-top: 50px;
+  background-color: black;
+}
+
+.nav-item{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.active {
+  background-color: grey !important;
+}
+
 .list-group-item {
   line-height: 2.5;
 }
