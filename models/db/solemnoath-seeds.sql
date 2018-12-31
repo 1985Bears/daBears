@@ -1,7 +1,7 @@
 -- INSERT SOLEMN OATH BREWERY #6
 INSERT INTO breweries (name, location) VALUES ('Solemn Oath', '1661 Quincy Ave, Naperville, IL 60540');
 
--- INSERT SOLEMN OATH BEERS
+-- INSERT INTO BEERS 
 
 INSERT INTO beers (beer_name, style, ABV, description, brew_id) VALUES 
 

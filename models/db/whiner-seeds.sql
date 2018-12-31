@@ -1,7 +1,7 @@
 -- INSERT WHINER BREWERY #8
 INSERT INTO Breweries (name, location) VALUES ("Whiner","1400 W 46th St, Chicago, IL 60609");
 
--- INSERT WHINER BEERS
+-- INSERT INTO BEERS 
 INSERT INTO beers (beer_name, style, abv, description, brew_id) VALUES
 ('Le Tub', 'Saison', 6.4, 'White grapes, lemon tarts, funky fresh. You’ll want to bathe your mouth with it.', 8),
 

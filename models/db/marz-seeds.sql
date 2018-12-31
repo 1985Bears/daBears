@@ -3,7 +3,7 @@
 INSERT INTO 
 breweries (name, location) VALUES ('Marz Community Brewing Co.', '3630 South Iron Street, Chicago, IL 60608');
 
--- INSERT MARZ BEERS
+-- INSERT INTO BEERS 
 INSERT INTO 
 beers (beer_name, style, abv, description, brew_id) VALUES ('CITRA!CITRA!CITRA!', 'Double India Pale Ale', 8, 'Citra Citra Citra Simcoe Citra Citra Citra Centennial Citra Citra…', 7);
 INSERT INTO 

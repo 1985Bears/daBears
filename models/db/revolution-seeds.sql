@@ -1,6 +1,9 @@
+-- INSERT REVOLUTION BREWERY #4
 INSERT INTO breweries (name, location) 
 VALUES ('Revolution Brewing', '3340 N. Kedzie Ave Chicago, IL 60618');
 
+
+-- INSERT INTO BEERS 
 INSERT INTO beers (beer_name, style, abv, brew_id) VALUES
 ('Anti-Hero', 'IPA', 6.7, 4), 
 ('Eugene', 'Porter', 6.8, 4), 

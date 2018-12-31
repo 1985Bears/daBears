@@ -2,7 +2,7 @@
 INSERT INTO breweries (name, location) 
 VALUES ('Lagunitas Brewing Company Chicago', '2607 W 17th St, Chicago, IL 60608');
 
--- INSERT LAGUNITAS BEERS
+-- INSERT INTO BEERS 
 INSERT INTO beers(beer_name, style, abv, description, brew_id) 
 VALUE ('Lil Sumpin', 'Ale', 7.5, 'Way smooth and silky with a nice wheatly-esque-ish-ness. A truly unique style featuring a strong hop finish on a silky body. A hoppy pale wheat ale that is great for IPA fans but so smooth that the hefeweizen fans dig it too.', 5),
 

@@ -2,7 +2,7 @@ USE`oaf5qemb5uomceb1`;
 
 INSERT INTO breweries (name, location) VALUES ('Off Color','3925 W. Dickens Ave. Chicago, Il. 60647');
 
--- OFF COLOR --
+-- INSERT INTO BEERS 
 
 INSERT INTO beers (beer_name, style, ABV, description, brew_id) VALUES ('Myshka', 'Stout', 3.5, 'Rather than a typical Imperial Stout, which quickly decimates you and buries you in the yard, this delicate beauty wraps a warm scarf around your neck and just tightens it, ever… so… gently. Also, we put Russian Serf Stout on the label because we got a lot of emails from people arguing you can not make a 3.5% RIS and we do not feel like going through all that again.', 1);
 

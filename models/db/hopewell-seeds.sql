@@ -1,6 +1,3 @@
--- JAWSDB DATABASE 
-USE `oaf5qemb5uomceb1`;
-
 -- INSERT INTO BREWERIES 
 INSERT INTO breweries (name, location) VALUES ('Hopewell', "2760 N. Milwaukee, Chicago, IL 60647");
 
