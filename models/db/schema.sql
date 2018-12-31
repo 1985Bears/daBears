@@ -1,27 +1,25 @@
-DROP DATABASE IF EXISTS chicagobrews_db;
-CREATE DATABASE chicagobrews_db;
-
-USE chicagobrews_db
+USE oaf5qemb5uomceb1;
 
 CREATE TABLE breweries(
-  id INT AUTO_INCREMENT NOT NULL,
+  brew_id INT AUTO_INCREMENT NOT NULL,
   name VARCHAR(255),
   location VARCHAR(255),
-  PRIMARY KEY (id)
+  PRIMARY KEY (brew_id)
 );
 
 CREATE TABLE beers(
-  id INT AUTO_INCREMENT NOT NULL,
+  beer_id INT AUTO_INCREMENT NOT NULL,
   beer_name VARCHAR(255),
   style VARCHAR(255),
   score INT, 
   ABV DECIMAL(4,2),
-  IBU INT NULL,
-  description VARCHAR(255) NULL,
-  PRIMARY KEY (id)
+  description TEXT NULL,
+PRIMARY KEY(beer_id),
+ FOREIGN KEY (brew_id) REFERENCES breweries(brew_id)
 );
 
 
-SELECT title, firstName, lastName
-FROM beers
-LEFT JOIN breweries ON beers.breweryID = brew.id;
+
+INSERT INTO breweries (name, location) 
+VALUES (“Hopewell”, "2760 N. Milwaukee, Chicago, IL 60647");
+
