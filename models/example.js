@@ -20,7 +20,7 @@ module.exports = function (sequelize, DataTypes) {
       validate: {
         len: [8]
       }
-    }
+      
     // user_preferences: {
     //   type: DataTypes.ARRAY(DataTypes.INTEGER),
     //   allowNull: true
