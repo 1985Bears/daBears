@@ -7,11 +7,18 @@ module.exports = function (sequelize, DataTypes) {
         len: [8]
       }
     },
-    user_name: {
+    first_name: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8]
+        len: [1]
+      }
+    },
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
       }
     },
     user_password: {
@@ -20,10 +27,6 @@ module.exports = function (sequelize, DataTypes) {
       validate: {
         len: [8]
       }
-      // user_preferences: {
-      //   type: DataTypes.ARRAY(DataTypes.INTEGER),
-      //   allowNull: true
-      // }
     }
   });
   return User;
