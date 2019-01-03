@@ -1,46 +1,53 @@
 var db = require("../models");
+var path = require("path");
 
 module.exports = function (app) {
-  // Load index page
-  app.get("/", function (req, res) {
-    db.User.findAll({}).then(function (dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
-  });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
-    db.User.findOne({ where: { id: req.params.id } }).then(function (dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+    res.sendFile(path.join(__dirname, "../public/sign-in.html"))
   });
 
-  // Load example page and pass in an example by id
-  app.get("/user/:username", function (req, res) {
-    db.User.findOne({ where: { id: req.params.username } }).then(function (dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+  //route for login users in 
+  app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/sign-in.html"));
+    //get the required parameters
+    const login = req.body;
+    //still need to search db;
+
+    console.log(db);
+  });
+  //route to allow first time users to sign up 
+  app.get("/signup", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/sign-up.html"));
   });
 
-  //route to connect users style choices
-  app.get("/user/:username/beers", function (req, res) {
+  // Load homepage from a specific user
+  app.get("/:username/home", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
+  });
+
+  //route to connect users to their favorite beer choices
+  app.get("/:username/favorites", function (req, res) {
 
   });
 
-  //route to connect to users setting page
-  app.get("/user/:username/settings", function (req, res) {
+  //route to connect users to their recommendations
+  app.get("/:username/recommendations", function (req, res) {
+
+  });
+
+  //route to connect users to brewery locations
+  app.get("/:username/brewieres", function (req, res) {
+
+  });
+
+  //route to connect user to create a new profile
+  app.get("/:username/newprofile", function (req, res) {
 
   });
 
   //route to connect to conect users to infomation page
-
   app.get("/info", function (req, res) {
     res.render("info page")
   });
