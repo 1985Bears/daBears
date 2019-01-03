@@ -1,0 +1,31 @@
+#profile-pic {
+    max-width: 500px;
+    height: 100px;
+}
+
+  .card {
+    display: inline-block;
+    max-width: 300px;
+    height: 300px; 
+  }
+  body{
+    background: url("../assets/images/wood-background.jpg");
+    background-position:center;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .card-text-brew {
+font-size: 11px;
+  }
+  .noborder {
+    border: none;
+}
+#map{
+  display: inline-block;
+  height: 200px;
+  /* The height is 400 pixels */
+  width: 250px;
+  /* The width is the width of the web page */
+  border: 2px solid black;
+}
