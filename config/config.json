@@ -1,9 +1,10 @@
 {
   "development": {
-    "username": "teamUser",
-    "password": "daBears85",
-    "database": "exampledb",
-    "host": "localhost",
+    "username": "aw5l0megozz5atlb",
+    "password": "dth3renn9b639rbh",
+    "database": "oaf5qemb5uomceb1",
+    "host": "p1us8ottbqwio8hv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {

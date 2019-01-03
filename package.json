@@ -14,7 +14,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mysql2": "^1.5.3",
+    "mysql2": "^1.6.4",
     "sequelize": "^4.38.0"
   },
   "devDependencies": {
@@ -24,6 +24,20 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
-    "prettier": "^1.13.7"
-  }
+    "prettier": "^1.13.7",
+    "sequelize-cli": "^5.4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1985Bears/daBears.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/1985Bears/daBears/issues"
+  },
+  "homepage": "https://github.com/1985Bears/daBears#readme"
 }

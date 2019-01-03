@@ -1,0 +1,16 @@
+body{
+  background: url("../assets/images/wood-background.jpg");
+  background-position:center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* color: white; */
+}
+
+.card{
+  margin-top: 150px;
+}
+
+button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
