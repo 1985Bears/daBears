@@ -16,9 +16,20 @@ module.exports = function (app) {
   });
 
   //Creates a new user 
-  app.post("/api/user", function (req, res) {
-    db.Example.create(req.body).then(function (newUser) {
-      res.json(newUser);
+  app.post("/api/signup", function (req, res) {
+    const newUser = req.body;
+    console.log(newUser)
+    db.User.create({
+      email: newUser.email,
+      firstName: newUser.firstName,
+      lastName: newUser.lastName,
+      password: newUser.password
+    }).then((User) => res.json(User));
+  });
+
+  app.get("/api/signup", (req, res) => {
+    db.User.findAll({}).then((dbUser) => {
+      res.json(dbUser);
     });
   });
 
