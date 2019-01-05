@@ -17,6 +17,18 @@ CREATE TABLE beers(
 PRIMARY KEY(beer_id),
  FOREIGN KEY (brew_id) REFERENCES breweries(brew_id)
 );
+CREATE TABLE Users(
+  email VARCHAR(255) NOT NULL,
+  firstName VARCHAR(255) NOT NULL,
+  lastName VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE favorites(
+  profile_name VARCHAR(255) NULL,
+  beer_style VARCHAR(255) NOT NULL,
+  user_id VARCHAR(255) NOT NULL
+);
 
 
 

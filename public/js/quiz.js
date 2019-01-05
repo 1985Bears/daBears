@@ -1,4 +1,5 @@
 let num = 0;
+let beerResult = ""
 
 let quizQuestions = [
   {
@@ -132,6 +133,7 @@ let setQuestion = function () {
 $("#option1").on("click", function () {
   if (quizQuestions[num].connectsTo[0] === 18) {
     $("#result").text(quizQuestions[num].result1);
+    beerResult = quizQuestions[num].result1;
   }
   num = quizQuestions[num].connectsTo[0];
   setQuestion();
@@ -140,7 +142,19 @@ $("#option1").on("click", function () {
 $("#option2").on("click", function () {
   if (quizQuestions[num].connectsTo[1] === 18) {
     $("#result").text(quizQuestions[num].result2);
+    beerResult = quizQuestions[num].result2;
   }
   num = quizQuestions[num].connectsTo[1];
   setQuestion();
 })
+
+
+
+//favorite JS
+//need to collect user specific id, preferred beer style, option to name for profile
+const newFavorite = {
+  profile_name: "", //need div to reference
+  beer_style: beerResult,
+  user_id: "",// need to find a way to keep user logged in
+};
+$.post("/api/favorite", newFavorite)

@@ -1,3 +1,5 @@
+var Sequelize = require("sequelize");
+
 module.exports = function (sequilize, Datatypes) {
     const User = sequilize.define("User", {
         email: {
