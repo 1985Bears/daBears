@@ -31,13 +31,13 @@ let quizQuestions = [
     question: "Are You Looking To Get Pretty Drunk?",
     options: ["Yes", "No"],
     connectsTo: [17, 18],
-    result2: "Porter or Stout"
+    result2: "Porter/Stout"
   },
   {
     question: "Fun & Funky? Or Easy & Refreshing?",
     options: ["Fun", "Easy"],
     connectsTo: [13, 18],
-    result2: "Farmhouse / Saison"
+    result2: "Farmhouse/Saison"
   },
   {
     question: "Are You Having Food While Drinking?",
@@ -54,7 +54,7 @@ let quizQuestions = [
     question: "Do You Enjoy A Challenge?",
     options: ["Yes", "No"],
     connectsTo: [18, 18],
-    result1: "Farmhouse / Saison",
+    result1: "Farmhouse/Saison",
     result2: "Pilsner"
   },
   {
@@ -71,10 +71,10 @@ let quizQuestions = [
     result2: "Wheat Beer"
   },
   {
-    question: "Do You Like Sour Foods?",
+    question: "Do You Like Sour or Fruity Tastes?",
     options: ["Yes", "No"],
     connectsTo: [18, 16],
-    result1: "Sour"
+    result1: "Sour/Fruit"
   },
   {
     question: "Do You Like A Bitter Hop Bite?",
@@ -87,21 +87,21 @@ let quizQuestions = [
     question: "Are You Eating A Meal Or Dessert?",
     options: ["Meal", "Dessert"],
     connectsTo: [15, 18],
-    result2: "Sour"
+    result2: "Sour/Fruit"
   },
   {
     question: "Hoppy Or Roasty?",
     options: ["Hoppy", "Roasty"],
     connectsTo: [18, 18],
     result1: "IPA",
-    result2: "Porter or Stout"
+    result2: "Porter/Stout"
   },
   {
     question: "Is Hops OK?",
     options: ["Yes", "No"],
     connectsTo: [18, 18],
     result1: "Pale Ale",
-    result2: "Porter or Stout"
+    result2: "Porter/Stout"
   },
   {
     question: "Do You Like Roaste Coffee?",
