@@ -6,6 +6,7 @@ module.exports = function (app) {
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/sign-in.html"))
+
   });
 
   //route for login users in 
@@ -14,8 +15,6 @@ module.exports = function (app) {
     //get the required parameters
     const login = req.body;
     //still need to search db;
-
-    console.log(db);
   });
   //route to allow first time users to sign up 
   app.get("/signup", function (req, res) {
@@ -23,8 +22,9 @@ module.exports = function (app) {
   });
 
   // Load homepage from a specific user
-  app.get("/:username/home", function (req, res) {
+  app.get("/:username/profile", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
+
   });
 
   //route to connect users to their favorite beer choices

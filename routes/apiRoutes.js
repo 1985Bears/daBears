@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function (app) {
   // Get all users
   app.get("/api/users", function (req, res) {
-    db.Example.findAll({}).then(function (dbExamples) {
+    db.User.findAll().then(function (dbExamples) {
       res.json(dbExamples);
     });
   });
@@ -18,7 +18,7 @@ module.exports = function (app) {
   //Creates a new user 
   app.post("/api/signup", function (req, res) {
     const newUser = req.body;
-    console.log(newUser)
+    // console.log(newUser)
     db.User.create({
       email: newUser.email,
       firstName: newUser.firstName,
@@ -29,7 +29,8 @@ module.exports = function (app) {
 
   app.get("/api/signup", (req, res) => {
     db.User.findAll({}).then((dbUser) => {
-      res.json(dbUser);
+      // res.json(dbUser);
+      console.log("in here", dbUser)
     });
   });
 
@@ -37,6 +38,12 @@ module.exports = function (app) {
   app.delete("/api/examples/:id", function (req, res) {
     db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {
       res.json(dbExample);
+    });
+  });
+
+  app.post("/api/favorites", function (req, res) {
+    db.Favorite.findAll({}).then(function (dbExamples) {
+      res.json(dbExamples);
     });
   });
 
