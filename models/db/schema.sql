@@ -8,6 +8,7 @@ CREATE TABLE breweries(
 );
 
 CREATE TABLE beers(
+  category VARCHAR(255) NOT NULL,
   beer_id INT AUTO_INCREMENT NOT NULL,
   beer_name VARCHAR(255),
   style VARCHAR(255),
@@ -17,6 +18,7 @@ CREATE TABLE beers(
 PRIMARY KEY(beer_id),
  FOREIGN KEY (brew_id) REFERENCES breweries(brew_id)
 );
+
 CREATE TABLE Users(
   email VARCHAR(255) NOT NULL,
   firstName VARCHAR(255) NOT NULL,
