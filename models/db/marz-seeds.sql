@@ -7,7 +7,7 @@ breweries (name, location) VALUES ('Marz Community Brewing Co.', '3630 South Iro
 INSERT INTO 
 beers (category, beer_name, style, abv, description, brew_id) VALUES ('IPA', 'CITRA!CITRA!CITRA!', 'Double India Pale Ale', 8, 'Citra Citra Citra Simcoe Citra Citra Citra Centennial Citra Citra…', 7),
 
-('IPA', 'Dank Grass', 'Gluten India Pale Ale', 5, 'Our gluten free IPA made with a mash of maize and Golden Naked Oats, with sorghum and jaggery added to the boil. Most of the hops are added to the whirlpool for this beer to limit bitterness, with a massive dry hopping for more hop flavor and aromas.', 7),
+('IPA', 'Dank Grass', 'Gluten-Free India Pale Ale', 5, 'Our gluten free IPA made with a mash of maize and Golden Naked Oats, with sorghum and jaggery added to the boil. Most of the hops are added to the whirlpool for this beer to limit bitterness, with a massive dry hopping for more hop flavor and aromas.', 7),
 
 ('IPA', 'Double Splash', 'Double India Pale Ale', 8, 'Fermented with the same yeast we use for Splash with a different fermentation schedule to keep the fruity esters while creating a sweeter finish.  Many of the hops in this beer are recent releases and add more tropical fruit flavors and aromas.', 7),
 

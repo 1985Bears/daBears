@@ -1,11 +1,18 @@
-
-body{
+/* 
+@media (max-width: @screen-sm-max) { .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ } */
+ body{
   background: url("../assets/images/wood-background.jpg");
   background-position:center;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Chicle', cursive;
   font-weight: 400;
 }
 
@@ -17,11 +24,13 @@ body{
   background-color:transparent !important; 
   /* background-color: #665245; */
   margin-bottom: 0%;
+  padding-bottom: 10px;
 }
   .card {
     display: inline-block;
-    max-width: 320px;
-    height: 200px; 
+    /* max-width: 320px;
+    height: 200px;  */
+    font-family: 'Open Sans', sans-serif;
   }
 /* breweries */
   .card-text-brew {
@@ -32,45 +41,79 @@ font-style: bold;
     border: none;
 }
 .display-6{
-  color: #C29445;
+  /* color: #C29445; */
+  color: #E5A749;
   line-height: 100px; 
-  font-size: 80px;
+  font-size: 90px;
+}
+.display-7{
+  /* color: #C29445; */
+  color: #E5A749;
+  line-height: 100px; 
+  font-size: 100px;
 }
 #map{
   display: inline-block;
-  height: 400px;
-  width: 400px;
-  border: 2px solid #343C3F;
+  height: 300px;
+  width: 325px;
+  border: 1px solid #343C3F;
 }
 /* favorites page */
 .lead-name{
   font-size: 28px;
-  font-style: bold;
+  /* font-style: bold; */
+  font-family: 'Open Sans', sans-serif;
 }
 .lead-bio{
   font-size: 26px;
 }
 .display-4 {
-  color: #C29445;
+  color: #E5A749;
   line-height: 100px; 
   font-size: 80px;
 }
 #card-fave {
   background-color:#DBD9D4;
 }
-#card-header-fave {
-  font-size: 16px;
+#card-body-fave{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.card-title {
+#card-header-fave {
+  margin-top: 9px;
+  font-size: 18px;
+  color: #343C3F;
+  font-style: bold;
+}
+h5.card-title {
+  color: #343C3F;
+  font-style: bold;
+}
+/* recommendations */
+#card-rec {
+  background-color:#DBD9D4;
+}
+#card-body-rec{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#card-header-rec {
+  margin-top: 9px;
+  font-size: 18px;
+  color: #343C3F;
+  font-style: bold;
+}
+h5.card-title {
   color: #343C3F;
   font-style: bold;
 }
 /* nav bar */
 .nav-link{
 color: #DBD9D4;
+font-family: 'Open Sans', sans-serif;
 }
-a:active {
-  background-color: #C29445 !important;
+.active {
+  background-color: #E5A749 !important;
 }
 .nav{
 font-size: 11px;
@@ -79,4 +122,49 @@ font-size: 11px;
 /* mouse over link */
 a:hover {
   color:#7D8284;
+}
+/* profile page */
+.h4{
+  font-size: 28px;
+  /* font-style: bold; */
+  font-family: 'Open Sans', sans-serif;
+}
+#profile-pic {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.h3{
+  font-size: 28px;
+  font-style: bold;
+  font-family: 'Chicle', cursive;
+}
+.user-info {
+  color: #343C3F; 
+  margin-top: 25px;
+}
+
+hr {
+  border-top: 2px solid  #E5A749;
+}
+
+#beer-profiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(0px, auto);
+  margin-bottom: 25px;
+/* background-color: #DBD9D4; */
+}
+
+#new-profile {
+  margin-bottom: 100px;
+  background-color: #DBD9D4;
+}
+
+.profile {
+  background-color:#DBD9D4;
+  color:#343C3F;
 }
