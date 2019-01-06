@@ -22,5 +22,11 @@ module.exports = function (sequilize, Datatypes) {
             }
         });
     };
+    Favorite.associate = function (models) {
+        Favorite.hasMany(models.Beer, {
+            onDelete: "cascade"
+        });
+    };
+
     return Favorite;
 };
