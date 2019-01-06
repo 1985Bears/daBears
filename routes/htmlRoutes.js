@@ -1,5 +1,7 @@
 var db = require("../models");
 var path = require("path");
+// Requiring our custom middleware for checking if a user is logged in
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
 
@@ -11,18 +13,25 @@ module.exports = function (app) {
 
   //route for login users in 
   app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/sign-in.html"));
     //get the required parameters
     const login = req.body;
-    //still need to search db;
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/profile");
+    }
+    res.sendFile(path.join(__dirname, "../public/sign-in.html"));
   });
   //route to allow first time users to sign up 
   app.get("/signup", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/sign-up.html"));
   });
 
+  //route to allow first time users to sign up 
+  app.get("/quiz", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/quiz.html"));
+  });
   // Load homepage from a specific user
-  app.get("/:username/profile", function (req, res) {
+  app.get("/profile", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
 
   });
@@ -56,4 +65,9 @@ module.exports = function (app) {
   app.get("*", function (req, res) {
     res.render("404");
   });
-};
+  // Here we've add our isAuthenticated middleware to this route.
+  // If a user who is not logged in tries to access this route they will be redirected to the signup page
+  app.get("/profile", isAuthenticated, function (req, res) {
+    res.sendFile(path.join(__dirname, "../profile.html"));
+  });
+}
