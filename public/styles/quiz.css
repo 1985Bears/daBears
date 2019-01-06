@@ -3,7 +3,9 @@ body{
   background-position:center;
   background-attachment: fixed;
   background-size: cover;
-  /* color: white; */
+background-color:  #DBD9D4;
+font-family: 'Open Sans', sans-serif;
+color:  #343C3F
 }
 
 .card{
@@ -11,6 +13,7 @@ body{
 }
 
 button {
+  background-color:  #E5A749;
   margin-left: 10px;
   margin-right: 10px;
 }
