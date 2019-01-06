@@ -156,11 +156,12 @@ $('#option2').on('click', function () {
 $('#save-profile').on('click', function () {
   profileName = $('#new-profile-name').val();
   newFlavorProfile = {
-    profile_name: profileName, //need div to reference
+    profileName: profileName, //need div to reference
     category: beerResult,
-    user_id: '',// need to find a way to keep user logged in
+    // user_id: '',// need to find a way to keep user logged in
   };
   // window.location.href = "/api/profile";
+  $.post("/api/newprofile", newFlavorProfile).then(() => console.log(newFlavorProfile))
 })
 
 
