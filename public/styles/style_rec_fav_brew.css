@@ -33,6 +33,9 @@
     font-family: 'Open Sans', sans-serif;
   }
 /* breweries */
+.brew-link{
+  color:  #343C3F;
+}
   .card-text-brew {
 font-size: 13px;
 font-style: bold;
@@ -45,12 +48,20 @@ font-style: bold;
   color: #E5A749;
   line-height: 100px; 
   font-size: 90px;
+  text-shadow: -1px 1px 2px #343C3F,
+  1px 1px 2px #343C3F,
+  1px -1px 0 #343C3F,
+  -1px -1px 0 #343C3F;
 }
 .display-7{
   /* color: #C29445; */
   color: #E5A749;
   line-height: 100px; 
   font-size: 100px;
+  text-shadow: -1px 1px 2px #343C3F,
+				  1px 1px 2px #343C3F,
+				  1px -1px 0 #343C3F,
+				  -1px -1px 0 #343C3F;
 }
 #map{
   display: inline-block;
@@ -71,6 +82,10 @@ font-style: bold;
   color: #E5A749;
   line-height: 100px; 
   font-size: 80px;
+  text-shadow: -1px 1px 2px #343C3F,
+				  1px 1px 2px #343C3F,
+				  1px -1px 0 #343C3F,
+				  -1px -1px 0 #343C3F;
 }
 #card-fave {
   background-color:#DBD9D4;
