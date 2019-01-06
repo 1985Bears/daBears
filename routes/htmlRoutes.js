@@ -27,11 +27,12 @@ module.exports = function (app) {
   });
 
   //route to allow first time users to sign up 
-  app.get("/quiz", function (req, res) {
+  app.get("/quiz", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/quiz.html"));
+
   });
   // Load homepage from a specific user
-  app.get("/profile", function (req, res) {
+  app.get("/profile", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
 
   });

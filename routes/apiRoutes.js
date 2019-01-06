@@ -1,5 +1,6 @@
 var db = require("../models");
 var passport = require("../config/passport");
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
   // Get all users
@@ -26,6 +27,17 @@ module.exports = function (app) {
   app.post("/api/favorites", function (req, res) {
     db.Favorite.findAll({}).then(function (dbExamples) {
       res.json(dbExamples);
+    });
+  });
+
+  app.post("/api/newprofile", isAuthenticated, function (req, res) {
+    let newProfile = req.body
+    let id = req.user.id
+    console.log(id)
+    db.newProfile.create({
+      profileName: newProfile.profileName,
+      category: newProfile.category,
+      qUserId: id
     });
   });
 
