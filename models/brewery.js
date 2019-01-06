@@ -14,7 +14,7 @@ module.exports = function (sequelize, DataTypes) {
     Brewery.associate = function (models) {
         // Associating Brewery with Posts
         // When an Brewery is deleted, also delete any associated Posts
-        Brewery.hasMany(models.Beers, {
+        Brewery.hasMany(models.Beer, {
             onDelete: "cascade"
         });
     };
