@@ -5,7 +5,13 @@
     "database": "oaf5qemb5uomceb1",
     "host": "p1us8ottbqwio8hv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
-    "dialect": "mysql"
+    "dialect": "mysql",
+
+
+    "migrationStorage": "json",
+    "migrationStoragePath": "seeds.json",
+    "migrationStorageTableName": "sequelize_meta"
+
   },
   "test": {
     "username": "root",
