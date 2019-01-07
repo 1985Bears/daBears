@@ -6,18 +6,48 @@ body{
 }
 
 .signin-main{
-background-color:rgba(0, 0, 0, 0.8);
-border: 1px solid black;
+background-color:  #DBD9D4;
+border: 3px solid #7D8284;
 border-radius: 6px;
-padding: 0;
+padding: 7px;
 margin-top: 75px;
-color: white;
+color:#343C3F;
 padding-bottom: 25px;
+font-size: 16px;
+font-style: bold;
+opacity: 0.87;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .title{
-border-bottom: 3px solid black;
-background-color: white;
+border-bottom: 3px solid #343C3F;
+background-color:  #DBD9D4;
 border-radius: 6px;
-color: black
+color:  #E5A749;
+line-height: 100px;
+font-family: 'Chicle', cursive;
+text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+h4.text-center{
+  font-size: 22px;
+  font-style: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  color:#343C3F;
+  font-size: 22px;
+    font-style: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+h1.text-center{
+  font-weight: 400; 
+  font-size: 100px;
+  line-height: 100px;
+}
+#submitBtn{
+  background-color: #E5A749;
+  color:  #343C3F;
 }
