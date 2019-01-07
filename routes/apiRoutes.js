@@ -41,6 +41,12 @@ module.exports = function (app) {
     });
   });
 
+  app.get("/api/newprofile", function (req, res) {
+    db.newProfile.findAll({}).then(function (profiles) {
+      res.json(profiles);
+    });
+  });
+
   //delete a old user
   app.delete("/api/examples/:username", function (req, res) {
     db.Example.destroy({ where: { user_name: req.params.username } }).then(function (user) {
