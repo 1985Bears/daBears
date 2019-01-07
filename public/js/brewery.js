@@ -22,7 +22,7 @@ $.ajax({
 function initMap() {
     // SET MAP FOCUS - CHICAGO
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10.5,
+        zoom: 9.75,
         center: { lat: 41.8781, lng: -87.6298 },
         mapTypeControl: true,
         mapTypeControlOptions: {
@@ -112,7 +112,7 @@ function initMap() {
     });
     setMarkers(map);
 }
-// 41.8572° N, 87.6920° W
+// 41.8278° N, 87.6597° W
 var breweries = [
     ["Hopewell", 41.9313, -87.7113, 1],
     ["Revolution", 41.9421, -87.7081, 2],
@@ -122,6 +122,8 @@ var breweries = [
     ["Goose Island Brewpub", 41.8871, -87.6721, 6],
     // ["Goose Island Barrel House", 41.91332, -87.65432, 5],
     ["Lagunitas", 41.8572, -87.6920, 7],
+    ["Solemn Oath", 41.7765, -88.1883, 8],
+    ["Marz", 41.8278, -87.6597, 9],
 ];
 var image = {
     url: "assets/images/bb.png",
