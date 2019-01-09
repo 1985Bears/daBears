@@ -10,8 +10,11 @@ $.get("/api/newprofile").then((res) => res.forEach(profile => {
 }));
 
 $(document).on("click", ".flavor-profile", function () {
-  console.log("suh")
-  profileCategory = this.id
-  console.log(profileCategory);
+  profileCategory = {
+    category: this.id
+  }
+  sessionStorage.setItem('category', profileCategory.category);
+  sessionStorage.getItem('category');
+  console.log(sessionStorage.getItem('category'))
+  window.location.replace(`/recommendations`)
 });
-
