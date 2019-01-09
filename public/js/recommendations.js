@@ -15,11 +15,18 @@ $.post("/api/recommendations", recommendedCategory).then((res) => res.forEach(re
   newFavBody.addClass("card-body");
   newFavBody.attr("id", "card-body-fave")
   newFavName.html(`<h5 class="card-title">${rec.beer_name}</h5>`);
-  newFavBody.html(`<p class="card-text">Style: ${rec.style}</p>
-  <p class="card-text">Description: ${rec.description}</p>
-  <p class="card-text">ABV: ${rec.abv}</p>
-  <a href="#" class="btn btn-warning">Save to favorites</a>`)
+  newFavBody.html(`<p id="style" class="card-text">Style: ${rec.style}</p>
+  <p id="description" class="card-text">Description: ${rec.description}</p>
+  <p id="abv" class="card-text">ABV: ${rec.abv}</p>
+  <button id="${rec.beer_name}" class=" favorites btn btn-warning">Save to favorites</button>`)
   newFav.append(newFavName, newFavBody);
   $("#fav-container").append(newFav);
   console.log(rec);
-}));;
+}));
+
+$(document).on("click", ".favorites", function () {
+  let beerName = {
+    beerName: this.id
+  }
+  $.post("/api/favorites", beerName)
+})

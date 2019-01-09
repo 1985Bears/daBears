@@ -38,8 +38,8 @@ module.exports = function (app) {
   });
 
   //route to connect users to their favorite beer choices
-  app.get("/:username/favorites", function (req, res) {
-
+  app.get("/favorites", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/favorites.html"));
   });
 
   //route to connect users to their recommendations
@@ -48,8 +48,8 @@ module.exports = function (app) {
   });
 
   //route to connect users to brewery locations
-  app.get("/:username/brewieres", function (req, res) {
-
+  app.get("/breweries", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/breweries.html"));
   });
 
   //route to connect user to create a new profile
