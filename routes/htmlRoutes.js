@@ -43,8 +43,8 @@ module.exports = function (app) {
   });
 
   //route to connect users to their recommendations
-  app.get("/:username/recommendations", function (req, res) {
-
+  app.get("/recommendations", isAuthenticated, function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/recommendations.html"));
   });
 
   //route to connect users to brewery locations
