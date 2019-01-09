@@ -33,7 +33,6 @@ module.exports = function (app) {
   app.post("/api/newprofile", isAuthenticated, function (req, res) {
     let newProfile = req.body
     let id = req.user.id
-    console.log(id)
     db.newProfile.create({
       profileName: newProfile.profileName,
       category: newProfile.category,
@@ -42,7 +41,21 @@ module.exports = function (app) {
   });
 
   app.get("/api/newprofile", function (req, res) {
-    db.newProfile.findAll({}).then(function (profiles) {
+    db.newProfile.findAll({
+      where: {
+        qUserId: req.user.id
+      }
+    }).then(function (profiles) {
+      res.json(profiles);
+    });
+  });
+
+  app.post("/api/recommendations", isAuthenticated, function (req, res) {
+    db.Beer.findAll({
+      where: {
+        category: req.body.category
+      }
+    }).then(function (profiles) {
       res.json(profiles);
     });
   });
