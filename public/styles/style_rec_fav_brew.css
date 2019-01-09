@@ -5,9 +5,10 @@
   margin-right: auto;
 }
  } */
+
  body{
   background: url("../assets/images/wood-background.jpg");
-  background-position:center;
+  background-position: center;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   background-attachment: fixed;
   background-size: cover;
@@ -17,14 +18,26 @@
 }
 
 #profile-pic {
-    max-width: 500px;
-    height: 100px;
+    max-width: 250px;
+    height: 60px;
+
+}
+#chicago-stars{
+  margin-bottom: 40px;
+  display: inline-block;
+  max-width: 56px;
+  /* height: 57px; */
+}
+#chicagoStars{
+  align-content: center;
+  display: block;
+  max-width: 156px;
 }
 .jumbotron {
   background-color:transparent !important; 
   /* background-color: #665245; */
   margin-bottom: 0%;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
   .card {
     display: inline-block;
@@ -44,10 +57,13 @@ font-style: bold;
     border: none;
 }
 .display-6{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
   /* color: #C29445; */
   color: #E5A749;
   line-height: 100px; 
-  font-size: 90px;
+  font-size: 75px;
   text-shadow: -1px 1px 2px #343C3F,
   1px 1px 2px #343C3F,
   1px -1px 0 #343C3F,
@@ -162,7 +178,7 @@ a:hover {
 }
 
 hr {
-  border-top: 2px solid  #E5A749;
+  border-top: 6px solid #9AC5E0;
 }
 
 #beer-profiles {
