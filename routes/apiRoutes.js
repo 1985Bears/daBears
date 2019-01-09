@@ -24,11 +24,37 @@ module.exports = function (app) {
     });
   });
 
-  app.post("/api/favorites", function (req, res) {
-    db.Favorite.findAll({}).then(function (dbExamples) {
-      res.json(dbExamples);
+  app.post("/api/favorites", isAuthenticated, function (req, res) {
+    let newFavorite = req.body;
+    let id = req.user.id;
+
+    db.Favorite.create({
+      beer_name: newFavorite.beerName,
+      qUserId: id
     });
   });
+
+  app.get("/api/favorites", function (req, res) {
+    db.Favorite.findAll({
+      where: {
+        qUserId: req.user.id
+      }
+    }).then(function (favorites) {
+      res.json(favorites);
+      console.log(favorites);
+    });
+  });
+
+  app.post("/api/getFavorites", function (req, res) {
+    db.Beer.findAll({
+      where: {
+        beer_name: req.body.beer_name
+      }
+    }).then(function (favorites) {
+      res.json(favorites);
+      // console.log(favorites);
+    });
+  })
 
   app.post("/api/newprofile", isAuthenticated, function (req, res) {
     let newProfile = req.body
