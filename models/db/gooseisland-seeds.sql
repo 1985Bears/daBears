@@ -7,7 +7,6 @@ VALUES ('Goose Island Brewery', '1800 W Fulton St Chicago, IL 60612');
 -- GOOSE ISLAND 
 
 INSERT INTO beers (category, beer_name, style, abv, description, brew_id) VALUES
-
 ('IPA', 'Goose IPA', 'IPA', 5.9, 'Our India Pale Ale recalls a time when ales shipped from England to India were highly hopped to preserve their distinct taste during the long journey. The result is a hop lover’s dream with a fruity aroma, set off by a dry malt middle, and long hop finish.', 3),
 
 ('Pale Ale', 'Goose Honkers Ale', 'English Bitter', 4.3, 'Inspired by visits to English country pubs, Honker’s Ale combines a spicy hop aroma with a rich malt middle to create a perfectly balanced beer. Immensely drinkable, Honker’s Ale is not only a beer drinkers can trust but one they’ll look forward to.', 3),
