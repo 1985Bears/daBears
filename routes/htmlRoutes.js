@@ -6,7 +6,7 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function (app) {
 
   // Load example page and pass in an example by id
-  app.get("/example/:id", function (req, res) {
+  app.get("/signin", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/sign-in.html"))
 
   });
@@ -38,7 +38,7 @@ module.exports = function (app) {
   });
 
   //route to connect users to their favorite beer choices
-  app.get("/favorites", function (req, res) {
+  app.get("/favorites", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/favorites.html"));
   });
 

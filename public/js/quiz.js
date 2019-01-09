@@ -110,7 +110,7 @@ let quizQuestions = [
     question: 'Do You Like Roaste Coffee?',
     options: ['Yes', 'No'],
     connectsTo: [18, 18],
-    result1: 'Barrel-Aged Stout',
+    result1: 'Porter/Stout',
     result2: 'Barleywine'
   }
 ];
@@ -152,8 +152,7 @@ $('#option2').on('click', function () {
   setQuestion();
 })
 
-
-$('#save-profile').on('click', function () {
+$(document).on("click", "#save-profile", function () {
   profileName = $('#new-profile-name').val().trim();
   newFlavorProfile = {
     profileName: profileName,
@@ -161,5 +160,4 @@ $('#save-profile').on('click', function () {
   };
   sessionStorage.setItem('category', beerResult);
   $.post("/api/newprofile", newFlavorProfile).then(() => window.location.replace(`/recommendations`))
-
 });

@@ -21,10 +21,24 @@ module.exports = function (app) {
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function (req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {
-      res.json(dbExample);
+  app.delete("/api/delete-profile/:profile", function (req, res) {
+    console.log("Profile Name");
+    db.newProfile.destroy({
+      where: {
+        profileName: req.params.profile
+      }
+    }).then(function () {
+      res.end();
+    });
+  });
+
+  app.delete("/api/delete-favorite/:favorite", function (req, res) {
+    db.Favorite.destroy({
+      where: {
+        beer_name: req.params.favorite
+      }
+    }).then(function () {
+      res.end();
     });
   });
 
@@ -35,6 +49,8 @@ module.exports = function (app) {
     db.Favorite.create({
       beer_name: newFavorite.beerName,
       qUserId: id
+    }).then(function () {
+      res.end();
     });
   });
 
@@ -45,7 +61,6 @@ module.exports = function (app) {
       }
     }).then(function (favorites) {
       res.json(favorites);
-      console.log(favorites);
     });
   });
 
@@ -56,7 +71,6 @@ module.exports = function (app) {
       }
     }).then(function (favorites) {
       res.json(favorites);
-      // console.log(favorites);
     });
   })
 
@@ -67,6 +81,8 @@ module.exports = function (app) {
       profileName: newProfile.profileName,
       category: newProfile.category,
       qUserId: id
+    }).then(function () {
+      res.end();
     });
   });
 
@@ -92,7 +108,11 @@ module.exports = function (app) {
 
   //delete a old user
   app.delete("/api/examples/:username", function (req, res) {
-    db.Example.destroy({ where: { user_name: req.params.username } }).then(function (user) {
+    db.Example.destroy({
+      where: {
+        user_name: req.params.username
+      }
+    }).then(function (user) {
       res.json(user);
     });
   });
