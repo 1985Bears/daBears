@@ -1,3 +1,7 @@
+// dotenv implemented
+// requires .sequelizerc to let sequellize know that it should be looking for config.js rather than config.json
+
+
 module.exports = {
 
   "development": {
