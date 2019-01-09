@@ -1,6 +1,6 @@
 let num = 0;
 let beerResult = '';
-let profileName = 'Test';
+let profileName = '';
 let newFlavorProfile;
 
 let quizQuestions = [
@@ -154,18 +154,12 @@ $('#option2').on('click', function () {
 
 
 $('#save-profile').on('click', function () {
-  profileName = $('#new-profile-name').val();
+  profileName = $('#new-profile-name').val().trim();
   newFlavorProfile = {
-    profile_name: profileName, //need div to reference
+    profileName: profileName,
     category: beerResult,
-    user_id: '',// need to find a way to keep user logged in
   };
-  // window.location.href = "/api/profile";
-})
+  sessionStorage.setItem('category', beerResult);
+  $.post("/api/newprofile", newFlavorProfile).then(() => window.location.replace(`/recommendations`))
 
-
-//favorite JS
-//need to collect user specific id, preferred beer style, option to name for profile
-
-
-// $.post('/api/favorite', newFlavorProfile)
+});

@@ -1,16 +1,16 @@
 module.exports = function (sequilize, Datatypes) {
     const Favorite = sequilize.define("Favorite", {
-        profile_name: {
+        beer_name: {
             type: Datatypes.STRING,
             allowNull: true,
         },
-        beer_style: {
-            type: Datatypes.STRING,
+        qUserId: {
+            type: Datatypes.INTEGER,
             allowNull: false,
             validate: {
                 len: [1]
             }
-        },
+        }
     });
 
     Favorite.associate = function (models) {
@@ -22,5 +22,11 @@ module.exports = function (sequilize, Datatypes) {
             }
         });
     };
+    Favorite.associate = function (models) {
+        Favorite.hasMany(models.Beer, {
+            onDelete: "cascade"
+        });
+    };
+
     return Favorite;
 };
