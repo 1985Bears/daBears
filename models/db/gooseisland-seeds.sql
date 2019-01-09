@@ -7,6 +7,7 @@ VALUES ('Goose Island Brewery', '1800 W Fulton St Chicago, IL 60612');
 -- GOOSE ISLAND 
 
 INSERT INTO beers (category, beer_name, style, abv, description, brew_id) VALUES
+
 ('IPA', 'Goose IPA', 'IPA', 5.9, 'Our India Pale Ale recalls a time when ales shipped from England to India were highly hopped to preserve their distinct taste during the long journey. The result is a hop lover’s dream with a fruity aroma, set off by a dry malt middle, and long hop finish.', 3),
 
 ('Pale Ale', 'Goose Honkers Ale', 'English Bitter', 4.3, 'Inspired by visits to English country pubs, Honker’s Ale combines a spicy hop aroma with a rich malt middle to create a perfectly balanced beer. Immensely drinkable, Honker’s Ale is not only a beer drinkers can trust but one they’ll look forward to.', 3),
@@ -27,6 +28,6 @@ INSERT INTO beers (category, beer_name, style, abv, description, brew_id) VALUES
 
 ('Farmhouse/Saison', 'Noël', 'Belgian Ale', 9.5, 'In Belgium, Noël beers were released at the end of the year as a special, limited release to thank loyal brewery customers for their support throughout the year. Goose Island Noël is an un-spiced Belgian-style, Dark Ale with balanced notes of caramelized sugar, toasted bread, black cherry, and dried apricot all in a warm, deep-mahogany body. This beer was brewed to celebrate the past year and toast the new year to come. From our brewers to you and yours, cheers and happy holidays.', 3),
 
-('Porter/Stout', 'Bourbon County Brand Stout 2018', 'Stout', 15.0, 'Brewed in honor of the 1000th batch at our original Clybourn brewpub. A liquid as dark and dense as a black hole with thick foam the color of a bourbon barrel. The nose is an intense mix of charred oak, chocolate, vanilla, caramel and smoke. One sip has more flavor than your average case of beer.', 3);
+('Porter/Stout', 'Bourbon County Brand Stout 2018', 'Stout', 15.0, 'Brewed in honor of the 1000th batch at our original Clybourn brewpub. A liquid as dark and dense as a black hole with thick foam the color of a bourbon barrel. The nose is an intense mix of charred oak, chocolate, vanilla, caramel and smoke. One sip has more flavor than your average case of beer.', 3),
 
 ('Barleywine', 'Bourbon County Coffee Barleywine 2018', 'Barleywine', 15.1, 'Working with our friends at Intelligentsia we flew down to Guatemala to source some of the worlds best coffee to use in the first ever release of Bourbon County Coffee Barleywine. A malt forward English-Style Barleywine, the beer aged in 4+ year old Heaven Hill Bourbon barrels before we added La Soledad coffee beans right before packaging to impart a bold coffee flavor and aroma.', 3);
