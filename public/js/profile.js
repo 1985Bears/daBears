@@ -1,5 +1,9 @@
 let profileCategory = '';
 
+$.get("/api/users").then((res) => {
+  $("#user-name").text(res.firstName, res.lastName)
+})
+
 $.get("/api/newprofile").then((res) => res.forEach(profile => {
   let newProfileButton = $("<button>");
   newProfileButton.text(profile.profileName);
