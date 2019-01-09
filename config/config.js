@@ -1,9 +1,10 @@
-{
+module.exports = {
+
   "development": {
-    "username": "aw5l0megozz5atlb",
-    "password": "dth3renn9b639rbh",
-    "database": "oaf5qemb5uomceb1",
-    "host": "p1us8ottbqwio8hv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": process.env.JAWSDB_USER,
+    "password": process.env.JAWSDB_PASS,
+    "database": process.env.JAWSDB_NAME,
+    "host": process.env.JAWSDB_HOST,
     "port": 3306,
     "dialect": "mysql",
 
@@ -22,6 +23,11 @@
     "logging": false
   },
   "production": {
+    "username": process.env.JAWSDB_USER,
+    "password": process.env.JAWSDB_PASS,
+    "database": process.env.JAWSDB_NAME,
+    "host": process.env.JAWSDB_HOST,
+    "port": 3306,
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
