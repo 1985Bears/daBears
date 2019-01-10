@@ -107,7 +107,7 @@ let quizQuestions = [
     result2: 'Porter/Stout'
   },
   {
-    question: 'Do You Like Roaste Coffee?',
+    question: 'Do You Like Roasted Coffee?',
     options: ['Yes', 'No'],
     connectsTo: [18, 18],
     result1: 'Porter/Stout',
