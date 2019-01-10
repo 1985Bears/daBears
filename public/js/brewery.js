@@ -22,7 +22,7 @@ $.ajax({
 function initMap() {
     // SET MAP FOCUS - CHICAGO
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 9.75,
+        zoom: 8.5,
         center: { lat: 41.8781, lng: -87.6298 },
         mapTypeControl: true,
         mapTypeControlOptions: {
