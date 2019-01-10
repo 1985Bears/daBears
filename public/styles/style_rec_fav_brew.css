@@ -172,15 +172,24 @@ a:hover {
   font-style: bold;
   font-family: 'Chicle', cursive;
 }
+#user-name{
+  color: #566368
+}
 .user-info {
   color: #343C3F; 
   margin-top: 25px;
 }
-
 hr {
-  border-top: 6px solid #9AC5E0;
+  border-top: 20px solid #9AC5E0;
 }
-
+.line{
+  border-top: 20px solid #9AC5E0;
+  margin-bottom: -10px;
+}
+.line1{
+  border-top: 20px solid #9AC5E0;
+  margin-top: -15px;
+}
 #beer-profiles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
