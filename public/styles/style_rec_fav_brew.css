@@ -81,8 +81,10 @@ font-style: bold;
 }
 #map{
   display: inline-block;
-  height: 300px;
-  width: 325px;
+  /* height: 300px;
+  width: 500px;  */
+  width: 100%;
+  height: 325px;
   border: 1px solid #343C3F;
 }
 /* favorites page */
@@ -103,6 +105,9 @@ font-style: bold;
 				  1px -1px 0 #343C3F,
 				  -1px -1px 0 #343C3F;
 }
+
+
+
 #card-fave {
   background-color:#DBD9D4;
 }
@@ -120,6 +125,9 @@ h5.card-title {
   color: #343C3F;
   font-style: bold;
 }
+
+
+
 /* recommendations */
 #card-rec {
   background-color:#DBD9D4;
@@ -173,7 +181,7 @@ a:hover {
   font-family: 'Chicle', cursive;
 }
 #user-name{
-  color: #566368
+  color:#E5A749;
 }
 .user-info {
   color: #343C3F; 
