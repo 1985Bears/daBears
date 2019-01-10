@@ -12,7 +12,8 @@ $.get("/api/favorites").then((res) => res.forEach(favorite => {
         let newFavBody = $("<div>");
         newFavBody.addClass("card-body");
         newFavBody.attr("id", "card-body-fave")
-        newFavName.html(`<h5 class="card-title">${favorite.beer_name}</h5>`);
+        newFavName.html(`<h5 class="card-title">${favorite.beer_name}</h5>
+        <h6>${favorite.brewery}</h6>`);
         newFavBody.html(`<p class="card-text">Style: ${favorite.style}</p>
       <p class="card-text">${favorite.description}</p>
       <p class="card-text">ABV: ${favorite.abv}%</p>`);
