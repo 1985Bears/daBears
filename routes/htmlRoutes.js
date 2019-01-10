@@ -6,7 +6,7 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function (app) {
 
   // Load example page and pass in an example by id
-  app.get("/example/:id", function (req, res) {
+  app.get("/signin", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/sign-in.html"))
 
   });
@@ -27,28 +27,29 @@ module.exports = function (app) {
   });
 
   //route to allow first time users to sign up 
-  app.get("/quiz", function (req, res) {
+  app.get("/quiz", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/quiz.html"));
+
   });
   // Load homepage from a specific user
-  app.get("/profile", function (req, res) {
+  app.get("/profile", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
 
   });
 
   //route to connect users to their favorite beer choices
-  app.get("/:username/favorites", function (req, res) {
-
+  app.get("/favorites", isAuthenticated, function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/favorites.html"));
   });
 
   //route to connect users to their recommendations
-  app.get("/:username/recommendations", function (req, res) {
-
+  app.get("/recommendations", isAuthenticated, function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/recommendations.html"));
   });
 
   //route to connect users to brewery locations
-  app.get("/:username/brewieres", function (req, res) {
-
+  app.get("/breweries", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/breweries.html"));
   });
 
   //route to connect user to create a new profile

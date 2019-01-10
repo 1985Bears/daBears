@@ -1,10 +1,15 @@
 var db = require("../models");
 var passport = require("../config/passport");
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
   // Get all users
   app.get("/api/users", function (req, res) {
-    db.User.findAll().then(function (dbExamples) {
+    db.User.findOne({
+      where: {
+        id: req.user.id
+      }
+    }).then(function (dbExamples) {
       res.json(dbExamples);
     });
   });
@@ -16,22 +21,98 @@ module.exports = function (app) {
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function (req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {
-      res.json(dbExample);
+  app.delete("/api/delete-profile/:profile", function (req, res) {
+    console.log("Profile Name");
+    db.newProfile.destroy({
+      where: {
+        profileName: req.params.profile
+      }
+    }).then(function () {
+      res.end();
     });
   });
 
-  app.post("/api/favorites", function (req, res) {
-    db.Favorite.findAll({}).then(function (dbExamples) {
-      res.json(dbExamples);
+  app.delete("/api/delete-favorite/:favorite", function (req, res) {
+    db.Favorite.destroy({
+      where: {
+        beer_name: req.params.favorite
+      }
+    }).then(function () {
+      res.end();
+    });
+  });
+
+  app.post("/api/favorites", isAuthenticated, function (req, res) {
+    let newFavorite = req.body;
+    let id = req.user.id;
+
+    db.Favorite.create({
+      beer_name: newFavorite.beerName,
+      qUserId: id
+    }).then(function () {
+      res.end();
+    });
+  });
+
+  app.get("/api/favorites", function (req, res) {
+    db.Favorite.findAll({
+      where: {
+        qUserId: req.user.id
+      }
+    }).then(function (favorites) {
+      res.json(favorites);
+    });
+  });
+
+  app.post("/api/getFavorites", function (req, res) {
+    db.Beer.findAll({
+      where: {
+        beer_name: req.body.beer_name
+      }
+    }).then(function (favorites) {
+      res.json(favorites);
+    });
+  })
+
+  app.post("/api/newprofile", isAuthenticated, function (req, res) {
+    let newProfile = req.body
+    let id = req.user.id
+    db.newProfile.create({
+      profileName: newProfile.profileName,
+      category: newProfile.category,
+      qUserId: id
+    }).then(function () {
+      res.end();
+    });
+  });
+
+  app.get("/api/newprofile", function (req, res) {
+    db.newProfile.findAll({
+      where: {
+        qUserId: req.user.id
+      }
+    }).then(function (profiles) {
+      res.json(profiles);
+    });
+  });
+
+  app.post("/api/recommendations", isAuthenticated, function (req, res) {
+    db.Beer.findAll({
+      where: {
+        category: req.body.category
+      }
+    }).then(function (profiles) {
+      res.json(profiles);
     });
   });
 
   //delete a old user
   app.delete("/api/examples/:username", function (req, res) {
-    db.Example.destroy({ where: { user_name: req.params.username } }).then(function (user) {
+    db.Example.destroy({
+      where: {
+        user_name: req.params.username
+      }
+    }).then(function (user) {
       res.json(user);
     });
   });

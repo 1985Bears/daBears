@@ -1,6 +1,6 @@
 let num = 0;
 let beerResult = '';
-let profileName = 'Test';
+let profileName = '';
 let newFlavorProfile;
 
 let quizQuestions = [
@@ -110,7 +110,7 @@ let quizQuestions = [
     question: 'Do You Like Roaste Coffee?',
     options: ['Yes', 'No'],
     connectsTo: [18, 18],
-    result1: 'Barrel-Aged Stout',
+    result1: 'Porter/Stout',
     result2: 'Barleywine'
   }
 ];
@@ -152,20 +152,12 @@ $('#option2').on('click', function () {
   setQuestion();
 })
 
-
-$('#save-profile').on('click', function () {
-  profileName = $('#new-profile-name').val();
+$(document).on("click", "#save-profile", function () {
+  profileName = $('#new-profile-name').val().trim();
   newFlavorProfile = {
-    profile_name: profileName, //need div to reference
+    profileName: profileName,
     category: beerResult,
-    user_id: '',// need to find a way to keep user logged in
   };
-  // window.location.href = "/api/profile";
-})
-
-
-//favorite JS
-//need to collect user specific id, preferred beer style, option to name for profile
-
-
-// $.post('/api/favorite', newFlavorProfile)
+  sessionStorage.setItem('category', beerResult);
+  $.post("/api/newprofile", newFlavorProfile).then(() => window.location.replace(`/recommendations`))
+});
