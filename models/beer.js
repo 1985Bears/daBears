@@ -23,8 +23,8 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.TEXT,
             allowNull: true,
         },
-        brew_id: {
-            type: DataTypes.INTEGER,
+        brewery: {
+            type: DataTypes.STRING,
             allowNull: false,
 
         },
