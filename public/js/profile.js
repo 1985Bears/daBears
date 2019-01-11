@@ -11,7 +11,7 @@ $.get("/api/newprofile").then((res) => res.forEach(profile => {
   newProfileButton.text(profile.profileName);
   newProfileButton.attr("id", profile.category);
   let newDeleteButton = $("<button>");
-  newDeleteButton.text('🗑');
+  newDeleteButton.text('X');
   newDeleteButton.addClass('btn btn-danger btn-lg delete');
   newDeleteButton.attr("id", profile.profileName);
 

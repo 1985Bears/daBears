@@ -21,3 +21,10 @@ button {
 #save-profile {
   margin-top: 25px;
 }
+#new-card{
+  font-family:  'Roboto', sans-serif; 
+  opacity: 0.8; 
+  background-color:#DBD9D4;
+  color: #343C3F;
+  margin-top: 150px;
+} 
