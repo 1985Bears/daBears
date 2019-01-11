@@ -44,6 +44,9 @@
     /* max-width: 320px;
     height: 200px;  */
     font-family: 'Open Sans', sans-serif;
+  }
+
+  #card-fave {
     margin-bottom: 50px;
   }
 /* breweries */
@@ -107,7 +110,7 @@ font-style: bold;
 				  -1px -1px 0 #343C3F;
 }
 
-.delete{
+.fave-delete{
   margin-bottom: 20px;
 }
 

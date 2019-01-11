@@ -18,7 +18,7 @@ $.get("/api/favorites").then((res) => res.forEach(favorite => {
       <p class="card-text">${favorite.description}</p>
       <p class="card-text">ABV: ${favorite.abv}%</p>`);
         let newDeleteButton = $("<button>");
-        newDeleteButton.addClass("delete btn btn-danger")
+        newDeleteButton.addClass("delete btn btn-danger fave-delete")
         newDeleteButton.attr("id", favorite.beer_name)
         newDeleteButton.text("Delete From Favorites")
         newFav.append(newFavName, newFavBody, newDeleteButton);
