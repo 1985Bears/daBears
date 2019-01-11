@@ -44,6 +44,7 @@
     /* max-width: 320px;
     height: 200px;  */
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
   }
 /* breweries */
 .brew-link{
@@ -106,7 +107,9 @@ font-style: bold;
 				  -1px -1px 0 #343C3F;
 }
 
-
+.delete{
+  margin-bottom: 20px;
+}
 
 #card-fave {
   background-color:#DBD9D4;
