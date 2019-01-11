@@ -115,6 +115,8 @@ font-style: bold;
 }
 
 #card-fave {
+  font-family:  'Roboto', sans-serif; 
+  opacity: 0.65;
   background-color:#DBD9D4;
 }
 #card-body-fave{
@@ -137,6 +139,8 @@ h5.card-title {
 /* recommendations */
 #card-rec {
   background-color:#DBD9D4;
+  font-family:  'Roboto', sans-serif; 
+  opacity: 0.65;
 }
 #card-body-rec{
   margin-top: 10px;
@@ -188,6 +192,7 @@ a:hover {
 }
 #user-name{
   color:#E5A749;
+  font-size: 28px;
 }
 .user-info {
   color: #343C3F; 
@@ -212,7 +217,10 @@ hr {
   margin-bottom: 25px;
 /* background-color: #DBD9D4; */
 }
-
+.a.rounded{
+  border-radius: 50px;
+  
+}
 #new-profile {
   margin-bottom: 100px;
   background-color: #DBD9D4;
@@ -222,3 +230,9 @@ hr {
   background-color:#DBD9D4;
   color:#343C3F;
 }
+#new-card{
+  font-family:  'Roboto', sans-serif; 
+  opacity: 0.8; 
+  background-color:#DBD9D4;
+  color: #343C3F;
+} 
