@@ -4,7 +4,7 @@ body{
   background-attachment: fixed;
   background-size: cover;
 background-color:  #DBD9D4;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Chicle', cursive;
 color:  #343C3F
 }
 
@@ -22,7 +22,8 @@ button {
   margin-top: 25px;
 }
 #new-card{
-  font-family:  'Roboto', sans-serif; 
+  font-size:34px;
+  font-family:  'Chicle', cursive;
   opacity: 0.8; 
   background-color:#DBD9D4;
   color: #343C3F;

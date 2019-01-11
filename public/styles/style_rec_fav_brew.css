@@ -135,6 +135,7 @@ font-style: bold;
 h5.card-title {
   color: #343C3F;
   font-style: bold;
+  font-family: 'Chicle', cursive;
 }
 
 
@@ -157,6 +158,7 @@ h5.card-title {
 h5.card-title {
   color: #343C3F;
   font-style: bold;
+
 }
 /* nav bar */
 .nav-link{
@@ -226,8 +228,14 @@ hr {
 #new-profile {
   margin-bottom: 100px;
   background-color: #DBD9D4;
+  opacity: 0.65;
 }
-
+button.flavor-profile{
+  opacity: 0.65;
+}
+button.btn{
+  opacity: 0.65;
+}
 .profile {
   background-color:#DBD9D4;
   color:#343C3F;
