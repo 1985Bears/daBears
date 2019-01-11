@@ -7,7 +7,7 @@ $.get("/api/users").then((res) => {
 $.get("/api/newprofile").then((res) => res.forEach(profile => {
   let newProfileDiv = $("<div>")
   let newProfileButton = $("<button>");
-  newProfileButton.addClass("flavor-profile btn");
+  newProfileButton.addClass("flavor-profile btn btn-lg");
   newProfileButton.text(profile.profileName);
   newProfileButton.attr("id", profile.category);
   let newDeleteButton = $("<button>");
