@@ -24,7 +24,7 @@
 
 3. Save your recommended profiles full of beer based off your mood or palate
 
-![sign up](public/assets/images/recommendations.png)
+![sign up](public/assets/images/name_your_profile.png)
 
 4. Or be more selective and only choose your favorites
 
