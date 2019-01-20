@@ -2,7 +2,7 @@
 
 - **For:** Northwestern Coding Bootcamp
 - **Developers:** Benjamin Delong, Kat Eng, Kayla Verheyen, Sergio Ontiveros
-- **Deployment Date** 
+- **Deployment Date** 1/8/2019
 - **Built With**  HTML, CSS, Animate CSS, Boostrap, Javascript,  Node.js, Express, mySQL, Sequelize, PassportJS  
 - **APIs** Google Maps
 
