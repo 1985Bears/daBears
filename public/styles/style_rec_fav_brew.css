@@ -6,182 +6,171 @@
 }
  } */
 
- body{
+body {
   background: url("../assets/images/wood-background.jpg");
   background-position: center;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   background-attachment: fixed;
   background-size: cover;
   /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Chicle', cursive;
+  font-family: "Chicle", cursive;
   font-weight: 400;
 }
 
 #profile-pic {
-    max-width: 250px;
-    height: 60px;
-
+  max-width: 250px;
+  height: 60px;
 }
-#chicago-stars{
+#chicago-stars {
   margin-bottom: 40px;
   display: inline-block;
   max-width: 56px;
   /* height: 57px; */
 }
-#chicagoStars{
+#chicagoStars {
   align-content: center;
   display: block;
   max-width: 156px;
 }
 .jumbotron {
-  background-color:transparent !important; 
+  background-color: transparent !important;
   /* background-color: #665245; */
   margin-bottom: 0%;
   padding-bottom: 7px;
 }
-  .card {
-    display: inline-block;
-    /* max-width: 320px;
+.card {
+  display: inline-block;
+  /* max-width: 320px;
     height: 200px;  */
-    font-family: 'Open Sans', sans-serif;
-  }
+  font-family: "Open Sans", sans-serif;
+}
 
-  #card-fave {
-    margin-bottom: 50px;
-  }
+#card-fave {
+  margin-bottom: 50px;
+}
 /* breweries */
-.brew-link{
-  color:  #343C3F;
+.brew-link {
+  color: #343c3f;
   font-style: bold;
-  font-family: 'Chicle', cursive;
+  font-family: "Chicle", cursive;
   font-size: 28px;
 }
-  .card-text-brew {
-font-size: 13px;
-font-style: bold;
-  }
-  .noborder {
-    border: none;
+.card-text-brew {
+  font-size: 13px;
+  font-style: bold;
 }
-.display-6{
+.noborder {
+  border: none;
+}
+.display-6 {
   margin-top: 0px;
   margin-bottom: 0px;
   display: inline-block;
   /* color: #C29445; */
-  color: #E5A749;
-  line-height: 100px; 
+  color: #e5a749;
+  line-height: 100px;
   font-size: 75px;
-  text-shadow: -1px 1px 2px #343C3F,
-  1px 1px 2px #343C3F,
-  1px -1px 0 #343C3F,
-  -1px -1px 0 #343C3F;
+  text-shadow: -1px 1px 2px #343c3f, 1px 1px 2px #343c3f, 1px -1px 0 #343c3f,
+    -1px -1px 0 #343c3f;
 }
-.display-7{
+.display-7 {
   /* color: #C29445; */
-  color: #E5A749;
-  line-height: 100px; 
+  color: #e5a749;
+  line-height: 100px;
   font-size: 100px;
-  text-shadow: -1px 1px 2px #343C3F,
-				  1px 1px 2px #343C3F,
-				  1px -1px 0 #343C3F,
-				  -1px -1px 0 #343C3F;
+  text-shadow: -1px 1px 2px #343c3f, 1px 1px 2px #343c3f, 1px -1px 0 #343c3f,
+    -1px -1px 0 #343c3f;
 }
-#map{
+#map {
   display: inline-block;
   /* height: 300px;
   width: 500px;  */
   width: 100%;
   height: 325px;
-  border: 1px solid #343C3F;
+  border: 1px solid #343c3f;
 }
 /* favorites page */
-.lead-name{
+.lead-name {
   font-size: 28px;
   /* font-style: bold; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.lead-bio{
+.lead-bio {
   font-size: 26px;
 }
 .display-4 {
-  color: #E5A749;
-  line-height: 100px; 
+  color: #e5a749;
+  line-height: 100px;
   font-size: 80px;
-  text-shadow: -1px 1px 2px #343C3F,
-				  1px 1px 2px #343C3F,
-				  1px -1px 0 #343C3F,
-				  -1px -1px 0 #343C3F;
+  text-shadow: -1px 1px 2px #343c3f, 1px 1px 2px #343c3f, 1px -1px 0 #343c3f,
+    -1px -1px 0 #343c3f;
 }
 
-.fave-delete{
+.fave-delete {
   margin-bottom: 20px;
 }
 
 #card-fave {
-  font-family:  'Roboto', sans-serif; 
-  opacity: 0.65;
-  background-color:#DBD9D4;
+  font-family: "Roboto", sans-serif;
+  background-color: #dbd9d4;
 }
-#card-body-fave{
+#card-body-fave {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 #card-header-fave {
   margin-top: 9px;
   font-size: 18px;
-  color: #343C3F;
+  color: #343c3f;
   font-style: bold;
 }
 h5.card-title {
-  color: #343C3F;
+  color: #343c3f;
   font-style: bold;
-  font-family: 'Chicle', cursive;
+  font-family: "Chicle", cursive;
   font-size: 34px;
 }
 
-
 /* recommendations */
 #card-rec {
-  background-color:#DBD9D4;
-  font-family:  'Roboto', sans-serif; 
-  opacity: 0.65;
+  background-color: #dbd9d4;
+  font-family: "Roboto", sans-serif;
 }
-#card-body-rec{
+#card-body-rec {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 #card-header-rec {
   margin-top: 9px;
   font-size: 18px;
-  color: #343C3F;
+  color: #343c3f;
   font-style: bold;
 }
 h5.card-title {
-  color: #343C3F;
+  color: #343c3f;
   font-style: bold;
-
 }
 /* nav bar */
-.nav-link{
-color: #DBD9D4;
-font-family: 'Open Sans', sans-serif;
+.nav-link {
+  color: #dbd9d4;
+  font-family: "Open Sans", sans-serif;
 }
 .active {
-  background-color: #E5A749 !important;
+  background-color: #e5a749 !important;
 }
-.nav{
-font-size: 11px;
-  background-color: #343C3F;
+.nav {
+  font-size: 11px;
+  background-color: #343c3f;
 }
 /* mouse over link */
 a:hover {
-  color:#7D8284;
+  color: #7d8284;
 }
 /* profile page */
-.h4{
+.h4 {
   font-size: 28px;
   /* font-style: bold; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #profile-pic {
   margin-top: 25px;
@@ -190,28 +179,28 @@ a:hover {
   height: 150px;
   width: 150px;
 }
-.h3{
+.h3 {
   font-size: 28px;
   font-style: bold;
-  font-family: 'Chicle', cursive;
+  font-family: "Chicle", cursive;
 }
-#user-name{
-  color:#E5A749;
+#user-name {
+  color: #e5a749;
   font-size: 34px;
 }
 .user-info {
-  color: #343C3F; 
+  color: #343c3f;
   margin-top: 25px;
 }
 hr {
-  border-top: 20px solid #9AC5E0;
+  border-top: 20px solid #9ac5e0;
 }
-.line{
-  border-top: 20px solid #9AC5E0;
+.line {
+  border-top: 20px solid #9ac5e0;
   margin-bottom: -10px;
 }
-.line1{
-  border-top: 20px solid #9AC5E0;
+.line1 {
+  border-top: 20px solid #9ac5e0;
   margin-top: -15px;
 }
 #beer-profiles {
@@ -220,50 +209,42 @@ hr {
   grid-gap: 10px;
   grid-auto-rows: minmax(0px, auto);
   margin-bottom: 25px;
-/* background-color: #DBD9D4; */
+  /* background-color: #DBD9D4; */
 }
-.a.rounded{
+.a.rounded {
   border-radius: 50px;
-  
 }
 #new-profile {
   margin-bottom: 100px;
-  background-color: #DBD9D4;
-  opacity: 0.65;
+  background-color: #dbd9d4;
 }
-button.flavor-profile{
-  opacity: 0.65;
-}
-button.btn{
-  opacity: 0.65;
-}
+
 .profile {
-  background-color:#DBD9D4;
-  color:#343C3F;
+  background-color: #dbd9d4;
+  color: #343c3f;
 }
-#brew-card{
-  font-family:  'Roboto', sans-serif !important; 
-  opacity: 0.65; 
-  background-color:#DBD9D4;
-  color: #343C3F;
+#brew-card {
+  font-family: "Roboto", sans-serif !important;
+  background-color: #dbd9d4;
+  color: #343c3f;
 }
-#new-card{
-  font-family:  'Roboto', sans-serif; 
-  opacity: 0.8; 
-  background-color:#DBD9D4;
-  color: #343C3F;
-} 
+#new-card {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.8;
+  background-color: #dbd9d4;
+  color: #343c3f;
+}
 /* icons */
 
-.social-links{
-  color: #343C3F;
+.social-links {
+  color: #343c3f;
 }
-i.fa-facebook{
-  color: #343C3F;
+i.fa-facebook {
+  color: #343c3f;
 }
-i.fa-instagram{
-  color: #343C3F;
+i.fa-instagram {
+  color: #343c3f;
 }
-i.fa-twitter{
-  color: #343C3F !important;
+i.fa-twitter {
+  color: #343c3f !important;
 }
