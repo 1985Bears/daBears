@@ -1,53 +1,52 @@
-body{
+body {
   background: url("../assets/images/cheers.jpg");
-  background-position:center;
+  background-position: center;
+  background-size: cover;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   background-attachment: fixed;
 }
 
-.signin-main{
-background-color:  #DBD9D4;
-border: 3px solid #7D8284;
-border-radius: 6px;
-padding: 7px;
-margin-top: 75px;
-color:#343C3F;
-padding-bottom: 25px;
-font-size: 16px;
-font-style: bold;
-opacity: 0.87;
-  font-family: 'Open Sans', sans-serif;
+.signin-main {
+  background-color: #dbd9d4;
+  border: 3px solid #7d8284;
+  border-radius: 6px;
+  padding: 7px;
+  margin-top: 150px;
+  color: #343c3f;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-style: bold;
+  opacity: 0.87;
+  font-family: "Open Sans", sans-serif;
 }
 
-.title{
-border-bottom: 3px solid #343C3F;
-background-color:  #DBD9D4;
-border-radius: 6px;
-color:  #E5A749;
-line-height: 100px;
-font-family: 'Chicle', cursive;
-text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+.title {
+  border-bottom: 3px solid #343c3f;
+  background-color: #dbd9d4;
+  border-radius: 6px;
+  color: #e5a749;
+  line-height: 100px;
+  font-family: "Chicle", cursive;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
-h4.text-center{
+h4.text-center {
   font-size: 22px;
   font-style: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-a{
-  color:#343C3F;
+a {
+  color: #343c3f;
   font-size: 22px;
-    font-style: bold;
-    font-family: 'Open Sans', sans-serif;
+  font-style: bold;
+  font-family: "Open Sans", sans-serif;
 }
-h1.text-center{
-  font-weight: 400; 
+h1.text-center {
+  font-weight: 400;
   font-size: 100px;
   line-height: 100px;
 }
-#submitBtn{
-  background-color: #E5A749;
-  color:  #343C3F;
+#submitBtn {
+  background-color: #e5a749;
+  color: #343c3f;
 }
