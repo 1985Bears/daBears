@@ -1,5 +1,5 @@
 {
-  "name": "node-handlebars-boilerplate",
+  "name": "handlebars-boilerplate",
   "version": "1.0.0",
   "description": "Project 2 Starter",
   "main": "server.js",
@@ -19,7 +19,7 @@
     "mysql2": "^1.6.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.3.0"
+    "sequelize": "^5.21.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -29,19 +29,19 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7",
-    "sequelize-cli": "^5.4.0"
+    "sequelize-cli": "^5.5.1"
   },
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1985Bears/daBears.git"
+    "url": "git+https://github.com/bdeLong/BeerMe.git"
   },
   "keywords": [],
   "author": "",
   "bugs": {
-    "url": "https://github.com/1985Bears/daBears/issues"
+    "url": "https://github.com/bdeLong/BeerMe/issues"
   },
-  "homepage": "https://github.com/1985Bears/daBears#readme"
+  "homepage": "https://github.com/bdeLong/BeerMe"
 }
